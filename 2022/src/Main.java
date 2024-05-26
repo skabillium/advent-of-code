@@ -1,11 +1,16 @@
 import day01.Day1a;
 import day01.Day1b;
+import day02.Day2a;
+import day02.Day2b;
 import common.Solver;
+
+import java.io.FileInputStream;
+import java.io.IOException;
 
 public class Main {
     public static Solver[][] solvers = new Solver[25][2];
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         initSolvers();
         if (args.length < 2) {
             System.out.println("Not enough arguments need [day] [part]");
@@ -31,11 +36,21 @@ public class Main {
             return;
         }
 
-        solver.solve();
+        var in = System.in;
+        if (args.length == 3) {
+            in = new FileInputStream(args[2]);
+        }
+
+        var solution = solver.solve(in);
+        System.out.printf("Day %d, part %d: %d \n", day, part, solution);
     }
 
     public static void initSolvers() {
+        // Day 1
         solvers[0][0] = new Day1a();
         solvers[0][1] = new Day1b();
+        // Day 2
+        solvers[1][0] = new Day2a();
+        solvers[1][1] = new Day2b();
     }
 }

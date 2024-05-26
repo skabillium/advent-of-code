@@ -1,5 +1,8 @@
 package common;
 
+import java.io.InputStream;
+import java.io.IOException;
+
 public interface Solver {
-    void solve();
+    int solve(InputStream in) throws IOException;
 }
