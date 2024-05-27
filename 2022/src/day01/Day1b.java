@@ -10,7 +10,7 @@ import java.io.InputStream;
 import common.Solver;
 
 public class Day1b implements Solver {
-    public int solve(InputStream in) throws IOException {
+    public Integer solve(InputStream in) throws IOException {
         var reader = new BufferedReader(new InputStreamReader(in));
         var currentCalories = 0;
         var elfs = new ArrayList<Integer>();

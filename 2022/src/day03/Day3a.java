@@ -6,7 +6,7 @@ import java.util.HashSet;
 import common.Solver;
 
 public class Day3a implements Solver {
-    public int solve(InputStream in) throws IOException {
+    public Integer solve(InputStream in) throws IOException {
         var reader = new BufferedReader(new InputStreamReader(in));
 
         var priorities = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";

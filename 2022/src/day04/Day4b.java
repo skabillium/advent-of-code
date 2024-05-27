@@ -5,7 +5,7 @@ import java.io.*;
 import common.Solver;
 
 public class Day4b implements Solver {
-    public int solve(InputStream in) throws IOException {
+    public Integer solve(InputStream in) throws IOException {
         var reader = new BufferedReader(new InputStreamReader(in));
         var count = 0;
 

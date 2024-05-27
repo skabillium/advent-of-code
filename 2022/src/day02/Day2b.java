@@ -23,7 +23,7 @@ public class Day2b implements Solver {
         }
     }
 
-    public int solve(InputStream in) throws IOException {
+    public Integer solve(InputStream in) throws IOException {
         var reader = new BufferedReader(new InputStreamReader(in));
         var total = 0;
 

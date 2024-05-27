@@ -8,7 +8,7 @@ import java.io.InputStream;
 import common.Solver;
 
 public class Day1a implements Solver {
-    public int solve(InputStream in) throws IOException {
+    public Integer solve(InputStream in) throws IOException {
         var reader = new BufferedReader(new InputStreamReader(in));
         var maxCalories = 0;
         var currentCalories = 0;
