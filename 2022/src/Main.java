@@ -6,6 +6,8 @@ import day03.Day3a;
 import day03.Day3b;
 import day04.Day4a;
 import day04.Day4b;
+import day05.Day5a;
+import day05.Day5b;
 import common.Solver;
 
 import java.io.FileInputStream;
@@ -47,7 +49,7 @@ public class Main {
         }
 
         var solution = solver.solve(in);
-        System.out.printf("Day %d, part %d: %d \n", day, part, solution);
+        System.out.printf("Day %d, part %d: %s \n", day, part, solution);
     }
 
     public static void registerSolvers() {
@@ -63,5 +65,8 @@ public class Main {
         // Day 4
         solvers[3][0] = new Day4a();
         solvers[3][1] = new Day4b();
+        // Day 5
+        solvers[4][0] = new Day5a();
+        solvers[4][1] = new Day5b();
     }
 }

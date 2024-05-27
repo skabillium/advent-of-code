@@ -6,7 +6,7 @@ import java.util.Stack;
 
 import common.Solver;
 
-public class Day5a implements Solver {
+public class Day5b implements Solver {
     public String solve(InputStream in) throws IOException {
         var reader = new BufferedReader(new InputStreamReader(in));
 
@@ -56,8 +56,14 @@ public class Day5a implements Solver {
             var from = Integer.parseInt(tokens[3]) - 1;
             var to = Integer.parseInt(tokens[5]) - 1;
 
+            var crates = new ArrayList<String>();
             for (var i = 0; i < amount; i++) {
-                stacks.get(to).add(stacks.get(from).pop());
+                crates.addFirst(stacks.get(from).pop());
+
+            }
+
+            for (var cr : crates) {
+                stacks.get(to).add(cr);
             }
         }
 
