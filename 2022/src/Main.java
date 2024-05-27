@@ -8,6 +8,8 @@ import day04.Day4a;
 import day04.Day4b;
 import day05.Day5a;
 import day05.Day5b;
+import day06.Day6a;
+import day06.Day6b;
 import common.Solver;
 
 import java.io.FileInputStream;
@@ -68,5 +70,8 @@ public class Main {
         // Day 5
         solvers[4][0] = new Day5a();
         solvers[4][1] = new Day5b();
+        // Day 6
+        solvers[5][0] = new Day6a();
+        solvers[5][1] = new Day6b();
     }
 }
