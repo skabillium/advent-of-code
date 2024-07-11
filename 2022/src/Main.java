@@ -97,6 +97,6 @@ public class Main {
         solvers[9][1] = new Day10b();
         // Day 11
         solvers[10][0] = new Day11a();
-        // solvers[10][1] = new Day11b();
+        solvers[10][1] = new Day11b();
     }
 }
