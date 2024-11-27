@@ -8,15 +8,6 @@ Welcome to my Advent of Code solutions repository! Each year, I take on the chal
 
 ## Languages
 
-- [Golang](2023) - Solutions for the year 2023 implemented in Golang.
-
-
-## Getting Started
-
-To run any solution, navigate to the respective directory and follow the instructions in the README.md file for that day.
-
-```bash
-cd 2023/day01
-go run day01a.go
-```
-
+- [Java](2022) - 2022 solutions in Java.
+- [Golang](2023) - 2023 solutions in Golang.
+- [Rust](2024) - 2024 solutions in Rust.
